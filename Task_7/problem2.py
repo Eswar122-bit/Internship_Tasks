@@ -1,0 +1,8 @@
+# Problem: The Captain's Room
+# Link: https://www.hackerrank.com/challenges/py-the-captains-room/problem
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+group_size = int(input())
+room_list = list(map(int,input().split()))
+room_set = (sum(set(room_list))*group_size - sum(room_list))//(group_size -1)
+print(room_set)
